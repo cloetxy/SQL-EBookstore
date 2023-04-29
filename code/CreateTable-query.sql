@@ -18,12 +18,12 @@ CREATE TABLE Member(
   Address nvarchar(500),
   );
   
- CREATE TABLE Publisher(
+CREATE TABLE Publisher(
   PublisherID nvarchar(20) PRIMARY KEY,
   PublisherName nvarchar(50),
   );
   
- CREATE TABLE PublisherBooks(
+CREATE TABLE PublisherBooks(
   ISBN nvarchar(50) PRIMARY KEY
   PublisherID nvarchar(20) FOREIGN KEY REFERENCES Publisher(PublisherID),
   BookTitle nvarchar(100),
@@ -54,7 +54,6 @@ CREATE TABLE SalesOrderDetails(
   OrderQuantity int,
   Amount decimal(10,2), 
   );
-  
 
 CREATE TABLE ShoppingCart(
   CartID nvarchar(20) PRIMARY KEY, 

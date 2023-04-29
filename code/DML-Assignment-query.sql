@@ -61,8 +61,8 @@ AS HighestSpent);
 
 SELECT * FROM Member
 WHERE NOT EXISTS
-	(SELECT * FROM SalesOrder
-	WHERE Member.MemberID = SalesOrder.MemberID);
+(SELECT * FROM SalesOrder
+WHERE Member.MemberID = SalesOrder.MemberID);
 
 
 --ix A list of purchased books that have not been delivered to members. The list should show member identification number, address, contact number, book serial number, book title, quantity, date and status of delivery.

@@ -1,0 +1,16 @@
+INSERT INTO CAR
+VALUES
+('ABU','Hyun','Elan','2013'),
+('ABA', 'Honda', 'City','2016'),
+('WKU','Per','Kan','2017'),
+('BDQ','Hyun','Son','2015')
+
+INSERT INTO RENTAL
+(100, 'ABU','E100',2300, '2018-02-05'),
+(122,'ABA','C100',1200,'2018-02-05'),
+(123,'WKC','K201',100,'2018-02-06'),
+(146.'ABU' ,'S105',900,'2018-02-07'),
+(177,'WKC','S105',700,'2018-02-09')
+
+INSERT INTO CUSTOMER
+('E100','S','SEL')
